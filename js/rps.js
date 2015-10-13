@@ -37,9 +37,9 @@ function updateScores(theWinner) {
   ++score;
 
   if (theWinner === 'user') {
-   $('.active, .results').addClass('winner');
-      $('.active, .results').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e) {
-        $('.active, .results').removeClass('winner');
+   $('.active, .results, .user-choice').addClass('winner');
+      $('.active, .results, .user-choice').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e) {
+        $('.active, .results, .user-choice').removeClass('winner');
       });
   }
 
@@ -69,6 +69,7 @@ function getRandom(array) {
 function runGame(userChoice) {
   var gameChoices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
   var computerChoice = getRandom(gameChoices);
+  $('.user-choice span').addClass('fa fa-hand-' + userChoice + '-o fa-5x user-fa');
   $('.computer span').addClass('fa fa-hand-' + computerChoice + '-o fa-5x');
   var results = compareChoices(userChoice, computerChoice);
   $('.results').append('<h1>' + results + '</h1>');
@@ -81,7 +82,7 @@ $('.fa').click(function() {
     }
   });
   $('.results').empty();
-  $('.computer span').removeClass();
+  $('.computer span, .user-choice span').removeClass();
   $(this).addClass('active');
   runGame($(this).attr('data-value'));
 });
