@@ -1,0 +1,110 @@
+@import "../../ultimate-sass-lib/colors-flatui.scss";
+@import "../../ultimate-sass-lib/mixins-animation.scss";
+@import "../../ultimate-sass-lib/mixins-prefixstyles.scss";
+
+$border-radius: 15px;
+$font-stack: 'Orbitron', sans-serif;
+$font-size: 75px;
+$margin: 50px;
+$row-height: 150px;
+
+
+body {
+  font: 100% $font-stack;
+  background-color: flat-color($silver);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  padding:0;
+ }
+
+ .top-row {
+  background: flat-color($green);
+  border-top: 30px solid flat-color($green, dark);
+  color: #fff;
+  width: 100%; 
+  margin: 0;
+  min-height: $row-height;
+  padding: 30px 0 0 0;
+  font-size: 50px;
+ }
+
+ .row, .results {
+  margin-bottom: 25px;
+  min-hight: $row-height;
+ }
+
+ .results h1,
+ .scores {
+   color: flat-color($yellow, dark);
+   font-size: $font-size;
+ }
+
+ .user-score {
+   color: flat-color($navy, dark);
+ }
+
+ .computer-score {
+   color: flat-color($red, dark);
+ }
+ 
+ h1 {
+   color: flat-color($green, dark);
+   margin-bottom: $margin;
+   font-weight: 700;
+   text-transform: uppercase;
+ }
+ 
+ .fa {
+   @include border-radius($border-radius);
+   color: #fff;
+   font-size: 150px;
+   width: 200px;
+   height: 200px;
+   padding: 25px;
+ }
+
+ .user .user-fa {
+   background: flat-color($navy, dark);
+   cursor: pointer;
+ }
+
+ .computer .fa {
+   background: flat-color($red, dark);
+   @include box-shadow('inset 0px 0px 20px 5px rgba(231, 76, 60,1.0)')
+ }
+
+ .user .user-fa:hover,
+ .user .user-fa.active {
+   background: flat-color($blue, dark);
+ }
+
+ @include keyframes(zoom) {
+  from { 
+    -webkit-transform: scale3d(1, 1, 1);
+    -moz-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    -o-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  50% { 
+  -webkit-transform: scale3d(1.05, 1.05, 1.05);
+  -moz-transform: scale3d(1.05, 1.05, 1.05);
+  -ms-transform: scale3d(1.05, 1.05, 1.05);
+  -o-transform: scale3d(1.05, 1.05, 1.05);
+  transform: scale3d(1.05, 1.05, 1.05); }
+  to { 
+  -webkit-transform: scale3d(1, 1, 1);
+    -moz-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    -o-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+}
+
+.winner {
+@include animation('zoom 1s');
+}
