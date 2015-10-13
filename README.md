@@ -1,2 +1,2 @@
 # rock-paper-scissors-lizard-spock
-RPSLS game
+RPSLS game an expansion of [my codepen](http://codepen.io/mrsdohpaz/pen/wKqzEp).
