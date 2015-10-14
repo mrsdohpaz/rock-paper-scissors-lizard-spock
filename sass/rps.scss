@@ -4,7 +4,7 @@
 
 $border-radius: 15px;
 $font-stack: 'Orbitron', sans-serif;
-$font-size: 75px;
+$font-size: 65px;
 $margin: 50px;
 $row-height: 150px;
 
@@ -35,21 +35,23 @@ body {
  }
 
  .row, .results {
-  margin-bottom: 25px;
   min-hight: $row-height;
  }
 
- .results h1,
- .scores {
+ .results h1 {
    color: flat-color($yellow, dark);
    font-size: $font-size;
  }
 
- .user-score {
+ .scores {
+    font-size: 100px;
+ }
+
+ .user-score, .user-title h1 {
    color: flat-color($navy, dark);
  }
 
- .computer-score {
+ .computer-score, .computer-title h1 {
    color: flat-color($red, dark);
  }
  

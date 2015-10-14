@@ -20,18 +20,19 @@ body {
   font-size: 50px; }
 
 .row, .results {
-  margin-bottom: 25px;
   min-hight: 150px; }
 
-.results h1,
-.scores {
+.results h1 {
   color: #f39c12;
-  font-size: 75px; }
+  font-size: 65px; }
 
-.user-score {
+.scores {
+  font-size: 100px; }
+
+.user-score, .user-title h1 {
   color: #2c3e50; }
 
-.computer-score {
+.computer-score, .computer-title h1 {
   color: #c0392b; }
 
 h1 {
