@@ -166,5 +166,15 @@ h1 {
   -ms-animation: zoom 1s;
   -o-animation: zoom 1s;
   animation: zoom 1s; }
+  
+  .footer {
+  padding-top: 50px;
+  text-align: center;
+}
+.footer .fa {
+  color: #000;
+  font-size: 34px;
+}
+
 
 /*# sourceMappingURL=rps.css.map */
