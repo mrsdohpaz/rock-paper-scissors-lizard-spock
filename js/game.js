@@ -47,7 +47,7 @@ function Game(selection) {
 
 
   this.player = selection;
-  this.computer = this.choices[Math.floor(Math.random() * this.choices.length)];
+  this.computer = this.random();
   this.results = this.calculate();
   this.winner = this.results[0];
   this.message = this.compare();
@@ -68,4 +68,8 @@ Game.prototype.compare = function() {
 
 Game.prototype.calculate = function() {
   return this.settings[this.player][this.computer];
+};
+
+Game.prototype.random = function() {
+  return this.choices[Math.floor(Math.random() * this.choices.length)];
 };

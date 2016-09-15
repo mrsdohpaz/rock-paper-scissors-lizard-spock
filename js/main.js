@@ -1,5 +1,6 @@
-$('.fa').click(function() {
-  var game = new Game($(this).attr('data-value')),
+$('.user .fa').click(function() {
+  var selection = $(this).data('value'),
+      game = new Game(selection),
       winner = game.winner,
       updateClass = '.' + winner + '-score',
       score = parseInt($(updateClass).text());
