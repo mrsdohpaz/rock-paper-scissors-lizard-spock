@@ -110,3 +110,13 @@ body {
 .winner {
 @include animation('zoom 1s');
 }
+
+.footer {
+  padding-top: 50px;
+  text-align: center; 
+ 
+  .fa {
+    color: #000;
+    font-size: 34px;
+  }
+}
