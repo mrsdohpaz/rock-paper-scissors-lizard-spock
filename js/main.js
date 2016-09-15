@@ -32,7 +32,7 @@ var rulesArray = {
 };
 
 function updateScores(theWinner) {
-  var updateClass = '.' + theWinner + '-score'; 
+  var updateClass = '.' + theWinner + '-score';
   var score = parseInt($(updateClass).text());
   ++score;
 
@@ -53,7 +53,7 @@ function compareChoices(choice1, choice2) {
   } else {
     var result = rulesArray[choice1][choice2];
     if (result[0] === 'win') {
-      updateScores('user');      
+      updateScores('user');
       return choice1 + ' ' + result[1] + ' ' + choice2 + '!';
     } else {
       updateScores('computer');
