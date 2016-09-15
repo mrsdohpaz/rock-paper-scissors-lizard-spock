@@ -59,7 +59,7 @@ Game.prototype.compare = function() {
     if (this.winner === 'user') {
       return this.player + ' ' + this.results[1] + ' ' + this.computer + '!';
     } else {
-      return this.computer + ' ' + this.results[1] + ' ' + this.computer + '!';
+      return this.computer + ' ' + this.results[1] + ' ' + this.player + '!';
     }
   } else {
     return "A tie!";

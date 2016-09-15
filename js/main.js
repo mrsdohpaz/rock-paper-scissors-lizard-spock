@@ -9,7 +9,10 @@ $('.user .fa').click(function() {
 
   $('.fa').removeClass('active');
   $('.results').empty();
-  $('.computer span, .user-choice span').removeClass();
+  $('.computer.choice span, .user.choice span').removeClass();
+
+  $('.computer.choice span').addClass('fa fa-hand-' + game.computer + '-o fa-3x');
+  $('.user.choice span').addClass('fa fa-hand-' + game.player + '-o fa-3x');
 
   $(this).addClass('active');
 
