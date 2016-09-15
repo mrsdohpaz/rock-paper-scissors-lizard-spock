@@ -20,5 +20,5 @@ $('.fa').click(function() {
   }
 
   $(updateClass).empty().append(score);
-  $('.results').append('<h1>' + game.message + '</h1>');
+  $('.results').append(game.message);
 });

@@ -10,74 +10,50 @@
   <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="styles/css/main.css" rel="stylesheet">
 </head>
 
 <body>
 
 	<header>
-		<h1>Let's play Rock, Paper, Scissors, Lizard, Spock!</h1>
+		<h1><span>Let's play <br/> Rock, Paper, Scissors, Lizard, Spock!</span></h1>
 	</header>
+
+	<div class="floating-button"><a href="https://github.com/mrsdohpaz/rock-paper-scissors-lizard-spock"><span class="fa fa-github"></span></a></div>
+
+	<section class="game-pieces user">
+		<h3>Make Your Selection</h3>
+		<ul>
+			<li><span class="fa fa-hand-rock-o fa-5x user-fa" data-value="rock" aria-label="rock"></span></li>
+			<li><span class="fa fa-hand-paper-o fa-5x user-fa" data-value="paper" aria-label="paper"></span></li>
+			<li><span class="fa fa-hand-scissors-o fa-5x user-fa" data-value="scissors" aria-label="scissors"></span></li>
+			<li><span class="fa fa-hand-lizard-o fa-5x user-fa" data-value="lizard" aria-label="lizard"></span></li>
+			<li><span class="fa fa-hand-spock-o fa-5x user-fa" data-value="spock" aria-label="rock"></span></li>
+		</ul>
+	</section>
 
 	<section>
 
     <div class="row">
-    <div class="col-sm-3 col-sm-offset-1 text-center user-title">
-      <h1>You</h1>
-      <span class="scores user-score">0</span>
-    </div>
-    <div class="col-sm-4 text-center">
-      <h1>vs</h1>
-    </div>
-    <div class="col-sm-3 text-center computer-title">
-      <h1>Computer</h1>
-      <span class="scores computer-score">0</span>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3 col-sm-offset-1 text-center user-choice">
-      <span class=""></span>
-    </div>
-    <div class="col-sm-4 text-center results">
-    </div>
-    <div class="col-sm-3 text-center computer">
-      <span class=""></span>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-12 text-center">
-      <h1>Select Your Choice</h1>
-    </div>
-  </div>
-  <div class="row user">
-    <div class="col-sm-2 col-sm-offset-1 text-center">
-      <span class="fa fa-hand-rock-o fa-5x user-fa" data-value="rock"></span>
-    </div>
-    <div class="col-sm-2 text-center">
-      <span class="fa fa-hand-paper-o fa-5x user-fa" data-value="paper"></span>
-    </div>
-    <div class="col-sm-2 text-center">
-      <span class="fa fa-hand-scissors-o fa-5x user-fa" data-value="scissors"></span>
-    </div>
-    <div class="col-sm-2 text-center">
-      <span class="fa fa-hand-lizard-o fa-5x user-fa" data-value="lizard"></span>
-    </div>
-    <div class="col-sm-2 text-center">
-      <span class="fa fa-hand-spock-o fa-5x user-fa" data-value="spock"></span>
-    </div>
+	    <div class="col-sm-3 col-sm-offset-1 text-center user-title">
+	      <h2>You</h2>
+	      <span class="scores user-score">0</span>
+	    </div>
+	    <div class="col-sm-4 text-center">
+	      <h3>vs</h3>
+				<div class="results"></div>
+	    </div>
+	    <div class="col-sm-3 text-center computer-title">
+	      <h2>Computer</h2>
+	      <span class="scores computer-score">0</span>
+	    </div>
   </div>
 
 	</section>
 
 
 	<footer>
-		<nav>
-      <ul>
-          <li><a href="https://github.com/mrsdohpaz/rock-paper-scissors-lizard-spock"><span class="fa fa-github"></span></a></li>
-          <li><a href="https://mrsdohpaz.github.io"><img src="http://mrsdohpaz.github.io/img/icon.png" width="34"></a></li>
-      </ul>
-    </nav>
+		<div class="text-center">Brought to you by <a href="https://mrsdohpaz.github.io">mrsdohpaz</a></div>
 	</footer>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
